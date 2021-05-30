@@ -1,0 +1,81 @@
+body {
+    overflow: hidden;
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+body {
+    color: #EFEFEF;
+    background-color: #121212;
+}
+
+.char-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.vertical-center {
+    display: flex;
+    align-items: center;
+}
+
+.char-background {
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    min-height: 100vh;
+    transition: background-size 0.3s linear;
+}
+
+.char-background:hover {
+    background-size: 70%;
+}
+
+.telos {
+    background-image: url("../images/Telos.png");
+}
+
+.edwar {
+    background-image: url("../images/Edwar.png");
+}
+
+.char-name-wrapper {
+    opacity: 0%;
+    color: white;
+    text-align: center;
+    height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,0) 40%, rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.3) 60%, rgba(0,212,255,0) 60%);    
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.char-name-wrapper:hover {
+    opacity: 100%;
+    transition: 0.3s linear;
+}
+
+.char-name {
+    opacity: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    flex: 1;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10vw;
+    text-decoration: none !important;
+}
+
+a {
+    text-decoration: none;
+}
