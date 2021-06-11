@@ -19,7 +19,7 @@
         <h1>Telos</h1>
         <h2></h2>
         <div class="info-grid">
-          <p><b>Age: </b>300 something</p>
+          <p><b>Age: </b><span id="age">364</span></p>
           <p><b>Birthyear: </b>1460</p>
           <p><b>Race: </b>Mali'aheral</p>
           <p><b>Gender: </b>Male</p>
@@ -30,8 +30,7 @@
             <a
               href="https://www.lordofthecraft.net/forums/topic/178317-translocationmatelosium/">
               Translocation
-            </a>
-            <a
+            </a>, <a
               href="https://www.lordofthecraft.net/forums/topic/169677-arcane-ma-ehier/">
               Sensory Illusion
             </a>
@@ -47,5 +46,15 @@
         <br /><br /><br />
       </div>
     </div>
+    
+    <script>
+      document.onload = () => {
+        let age = document.getElementById("age");
+        // Age as per 11/06/2021 + weeks since then
+        age.textContent = 364 + Math.round(
+          (new Date(2021, 6, 11) - new Date()) / (7 * 24 * 60 * 60 * 1000)
+        );
+      }
+    </script>
   </body>
 </html>
