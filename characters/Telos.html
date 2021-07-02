@@ -49,7 +49,7 @@
         let age = document.getElementById("age");
         // Age as per 11/06/2021 + weeks since then
         age.textContent = 364 + Math.round(
-          (new Date(2021, 6, 11) - new Date()) / (7 * 24 * 60 * 60 * 1000)
+          (new Date() - new Date(2021, 5, 11)) / (7 * 24 * 60 * 60 * 1000)
         );
       });
     </script>
